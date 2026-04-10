@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sui323 | AI Chat</title>
+    <meta name="description" content="A Gemini Flash based AI chatbot page for the sui323 personal website." />
+    <link rel="canonical" href="https://sui323.github.io/chat-en.html" />
+    <link rel="icon" href="./assets/img/brand-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="topbar">
+      <div class="site-shell">
+        <div class="topbar-inner">
+          <a class="brand" href="./en.html" aria-label="sui323 home">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy">
+              <small>Personal Site</small>
+              <strong>sui323</strong>
+            </span>
+          </a>
+          <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="Open menu" data-nav-toggle>
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-wrap" data-nav-wrap>
+            <nav class="nav-links" aria-label="Primary">
+              <a href="./en.html">Home</a>
+              <a href="./research-en.html">Focus</a>
+              <a href="./projects-en.html">Projects</a>
+              <a href="./writing-en.html">Writing</a>
+              <a href="./chat-en.html" aria-current="page">AI Chat</a>
+              <a href="./contact-en.html">Contact</a>
+            </nav>
+            <a class="lang-switch" href="./chat.html" lang="ko">KO</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="site-shell">
+      <section class="page-hero panel" data-reveal>
+        <span class="eyebrow">Gemini Chatbot</span>
+        <h1>An AI chat page for answering questions about the site</h1>
+        <p class="page-copy">
+          The chatbot answers from the public site structure and project context. The frontend stays on GitHub Pages,
+          while the live Gemini API call runs through a separate Worker.
+        </p>
+        <div class="metric-grid">
+          <div class="metric"><strong>Model</strong><span>gemini-3-flash-preview</span></div>
+          <div class="metric"><strong>Frontend</strong><span>GitHub Pages</span></div>
+          <div class="metric"><strong>Secret</strong><span>Worker env only</span></div>
+        </div>
+      </section>
+
+      <section class="chat-layout" data-chat-root data-chat-lang="en" data-reveal>
+        <aside class="chat-sidebar notice">
+          <span class="kicker">Suggested prompts</span>
+          <h3>Start with one of these</h3>
+          <div class="prompt-row">
+            <button class="prompt-chip" type="button" data-prompt="How is this site structured?">Site structure</button>
+            <button class="prompt-chip" type="button" data-prompt="How is the Gemini chatbot connected?">Chatbot setup</button>
+            <button class="prompt-chip" type="button" data-prompt="What should go into the projects page?">Projects page</button>
+            <button class="prompt-chip" type="button" data-prompt="Where should I store the API key?">API key storage</button>
+          </div>
+          <div class="callout">
+            <strong>Important</strong>
+            <span>Never put the API key inside this static site code or inside <span class="inline-code">assets/js</span>.</span>
+          </div>
+        </aside>
+
+        <section class="chat-shell panel">
+          <div class="chat-feed" data-chat-feed></div>
+          <div class="chat-status" data-chat-status></div>
+          <form class="chat-composer" data-chat-form>
+            <textarea
+              data-chat-input
+              placeholder="Ask about the site, projects, the chatbot architecture, or deployment."
+            ></textarea>
+            <div class="chat-actions">
+              <div class="button-row">
+                <button class="button primary" type="submit" data-chat-send>Send</button>
+                <button class="button secondary" type="button" data-chat-reset>Reset chat</button>
+              </div>
+              <span class="lang-note">Set the Worker URL in <span class="inline-code">assets/js/chat-config.js</span>.</span>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="site-shell">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <small>Static Frontend + Serverless Proxy</small>
+            <strong>sui323.github.io</strong>
+          </div>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="./en.html">Home</a>
+            <a href="./chat-en.html">AI Chat</a>
+            <a href="./contact-en.html">Contact</a>
+          </nav>
+          <span class="lang-note">© <span data-year></span> sui323</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/site.js" defer></script>
+    <script src="./assets/js/chat-config.js" defer></script>
+    <script src="./assets/js/chat.js" defer></script>
+  </body>
+</html>

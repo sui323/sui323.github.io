@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sui323 | AI Chat</title>
+    <meta name="description" content="Gemini Flash 기반으로 동작하는 sui323 사이트용 AI 챗봇 페이지입니다." />
+    <link rel="canonical" href="https://sui323.github.io/chat.html" />
+    <link rel="icon" href="./assets/img/brand-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+    <header class="topbar">
+      <div class="site-shell">
+        <div class="topbar-inner">
+          <a class="brand" href="./ko.html" aria-label="sui323 홈">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy">
+              <small>Personal Site</small>
+              <strong>sui323</strong>
+            </span>
+          </a>
+          <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="메뉴 열기" data-nav-toggle>
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-wrap" data-nav-wrap>
+            <nav class="nav-links" aria-label="주요">
+              <a href="./ko.html">홈</a>
+              <a href="./research.html">관심 분야</a>
+              <a href="./projects.html">프로젝트</a>
+              <a href="./writing.html">글</a>
+              <a href="./chat.html" aria-current="page">AI Chat</a>
+              <a href="./contact.html">연락처</a>
+            </nav>
+            <a class="lang-switch" href="./chat-en.html" lang="en">EN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="site-shell">
+      <section class="page-hero panel" data-reveal>
+        <span class="eyebrow">Gemini Chatbot</span>
+        <h1>사이트 정보를 바로 물어볼 수 있는 AI Chat</h1>
+        <p class="page-copy">
+          이 챗봇은 공개된 사이트 정보와 프로젝트 구조를 기준으로 답변합니다. 프론트엔드는 정적 사이트에
+          두고, 실제 Gemini API 호출은 별도 Worker에서 처리하도록 설계했습니다.
+        </p>
+        <div class="metric-grid">
+          <div class="metric"><strong>Model</strong><span>gemini-3-flash-preview</span></div>
+          <div class="metric"><strong>Frontend</strong><span>GitHub Pages</span></div>
+          <div class="metric"><strong>Secret</strong><span>Worker env only</span></div>
+        </div>
+      </section>
+
+      <section class="chat-layout" data-chat-root data-chat-lang="ko" data-reveal>
+        <aside class="chat-sidebar notice">
+          <span class="kicker">추천 질문</span>
+          <h3>이런 식으로 바로 물어볼 수 있습니다</h3>
+          <div class="prompt-row">
+            <button class="prompt-chip" type="button" data-prompt="이 사이트는 어떤 구조로 되어 있나요?">사이트 구조</button>
+            <button class="prompt-chip" type="button" data-prompt="Gemini 챗봇은 어떻게 연결되어 있나요?">챗봇 연결 방식</button>
+            <button class="prompt-chip" type="button" data-prompt="프로젝트 페이지에는 어떤 내용을 넣으면 좋을까요?">프로젝트 구성</button>
+            <button class="prompt-chip" type="button" data-prompt="API 키는 어디에 저장해야 하나요?">API 키 저장</button>
+          </div>
+          <div class="callout">
+            <strong>중요</strong>
+            <span>API key는 이 정적 사이트 코드나 <span class="inline-code">assets/js</span> 안에 넣으면 안 됩니다.</span>
+          </div>
+        </aside>
+
+        <section class="chat-shell panel">
+          <div class="chat-feed" data-chat-feed></div>
+          <div class="chat-status" data-chat-status></div>
+          <form class="chat-composer" data-chat-form>
+            <textarea
+              data-chat-input
+              placeholder="사이트 소개, 프로젝트, 챗봇 동작 방식 등을 질문해 보세요."
+            ></textarea>
+            <div class="chat-actions">
+              <div class="button-row">
+                <button class="button primary" type="submit" data-chat-send>보내기</button>
+                <button class="button secondary" type="button" data-chat-reset>대화 초기화</button>
+              </div>
+              <span class="lang-note">Worker URL은 <span class="inline-code">assets/js/chat-config.js</span>에서 설정합니다.</span>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="site-shell">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <small>Static Frontend + Serverless Proxy</small>
+            <strong>sui323.github.io</strong>
+          </div>
+          <nav class="footer-nav" aria-label="바닥글">
+            <a href="./ko.html">홈</a>
+            <a href="./chat.html">AI Chat</a>
+            <a href="./contact.html">연락처</a>
+          </nav>
+          <span class="lang-note">© <span data-year></span> sui323</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/site.js" defer></script>
+    <script src="./assets/js/chat-config.js" defer></script>
+    <script src="./assets/js/chat.js" defer></script>
+  </body>
+</html>

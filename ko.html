@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sui323 | Personal Website</title>
+    <meta
+      name="description"
+      content="sui323의 소개, 프로젝트, 글, 연락처, AI 챗봇을 정리한 GitHub Pages 기반 개인 사이트입니다."
+    />
+    <link rel="canonical" href="https://sui323.github.io/ko.html" />
+    <link rel="icon" href="./assets/img/brand-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+    <header class="topbar">
+      <div class="site-shell">
+        <div class="topbar-inner">
+          <a class="brand" href="./ko.html" aria-label="sui323 홈">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy">
+              <small>Personal Site</small>
+              <strong>sui323</strong>
+            </span>
+          </a>
+          <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="메뉴 열기" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-wrap" data-nav-wrap>
+            <nav class="nav-links" aria-label="주요">
+              <a href="./ko.html" aria-current="page">홈</a>
+              <a href="./research.html">관심 분야</a>
+              <a href="./projects.html">프로젝트</a>
+              <a href="./writing.html">글</a>
+              <a href="./chat.html">AI Chat</a>
+              <a href="./contact.html">연락처</a>
+            </nav>
+            <a class="lang-switch" href="./en.html" lang="en">EN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="site-shell">
+      <section class="hero">
+        <article class="hero-copy panel" data-reveal>
+          <span class="eyebrow">Build, Write, Chat</span>
+          <h1 class="display">sui323</h1>
+          <p class="lead">
+            작업 소개와 프로젝트 기록을 보여 주는 개인 사이트이자, 방문자가 바로 대화해 볼 수 있는
+            Gemini 기반 AI 챗봇을 함께 두는 공간입니다.
+          </p>
+          <div class="badge-row">
+            <span class="chip">GitHub Pages</span>
+            <span class="chip">Korean + English</span>
+            <span class="chip">Gemini Chatbot</span>
+            <span class="chip">Static + Serverless</span>
+          </div>
+          <div class="button-row">
+            <a class="button primary" href="./chat.html">AI 챗봇 열기</a>
+            <a class="button secondary" href="./projects.html">프로젝트 보기</a>
+            <a class="button ghost" href="./contact.html">연락처</a>
+          </div>
+        </article>
+        <aside class="hero-panel" data-reveal>
+          <span class="panel-caption">What is inside</span>
+          <h2 class="panel-title">읽는 사이트와 대화하는 사이트를 한 구조에 묶었습니다</h2>
+          <p class="section-copy">
+            첫 화면에서는 전체 흐름을 보여 주고, AI Chat 페이지에서는 사이트 내용과 공개된 정보를
+            기준으로 즉시 질문을 받아볼 수 있습니다.
+          </p>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>Assistant</strong>
+              <span>Gemini Flash proxy</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Hosting</strong>
+              <span>GitHub Pages + Worker</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Purpose</strong>
+              <span>Profile + Project guide</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Status</strong>
+              <span>Version 1</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" data-reveal>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">소개</span>
+            <h2 class="section-title">정보를 읽고, 필요하면 바로 <em>질문할 수 있게</em></h2>
+          </div>
+          <p class="section-copy">정적인 소개 페이지와 대화형 안내를 함께 두는 개인 사이트 구조입니다.</p>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <span class="kicker">Focus</span>
+            <h3>관심 분야 정리</h3>
+            <p>웹 경험, AI 워크플로, 문서화, 작은 실험을 어떻게 구조화하는지 소개합니다.</p>
+            <a class="card-link" href="./research.html">관심 분야 보기</a>
+          </article>
+          <article class="card">
+            <span class="kicker">Projects</span>
+            <h3>대표 작업 모음</h3>
+            <p>사이트 자체와 앞으로 확장할 실험들을 프로젝트 단위로 정리해 둘 수 있습니다.</p>
+            <a class="card-link" href="./projects.html">프로젝트 보기</a>
+          </article>
+          <article class="card">
+            <span class="kicker">AI Chat</span>
+            <h3>Gemini 기반 사이트 도우미</h3>
+            <p>방문자가 페이지를 다 읽지 않아도 챗봇에게 바로 질문해 필요한 내용을 빠르게 찾을 수 있습니다.</p>
+            <a class="card-link" href="./chat.html">챗봇 체험하기</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-band" data-reveal>
+        <div>
+          <span class="eyebrow">Next step</span>
+          <h2>이제 실제 자기소개와 프로젝트 링크만 채우면 바로 운영할 수 있습니다</h2>
+          <p>
+            현재 구조와 챗봇 프레임은 모두 준비되어 있습니다. 다음 단계는 실제 소개 문구, 프로젝트 링크,
+            연락 수단, 그리고 Worker URL을 넣는 일입니다.
+          </p>
+        </div>
+        <div class="button-row">
+          <a class="button primary" href="./chat.html">AI Chat</a>
+          <a class="button secondary" href="https://github.com/sui323" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="site-shell">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <small>Built for GitHub Pages</small>
+            <strong>sui323.github.io</strong>
+          </div>
+          <nav class="footer-nav" aria-label="바닥글">
+            <a href="./research.html">관심 분야</a>
+            <a href="./projects.html">프로젝트</a>
+            <a href="./writing.html">글</a>
+            <a href="./chat.html">AI Chat</a>
+            <a href="./contact.html">연락처</a>
+          </nav>
+          <span class="lang-note">© <span data-year></span> sui323</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/site.js" defer></script>
+  </body>
+</html>
