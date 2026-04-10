@@ -83,7 +83,7 @@ export default {
       const model = env.GEMINI_MODEL || "gemini-3-flash-preview";
       const promptPrefix =
         lang === "ko"
-          ? "사용자에게 한국어로 답변하세요. 공개된 사이트 정보와 명확한 제안만 사용하세요."
+          ? "Reply in Korean. Use only public site information and clearly labeled suggestions."
           : "Reply in English. Use public site information and clearly labeled suggestions only.";
 
       const geminiResponse = await fetch(

@@ -1,1 +1,4 @@
 workers/gemini-proxy/.dev.vars
+workers/gemini-proxy/.dev.vars.*
+workers/gemini-proxy/.env
+workers/gemini-proxy/.env.*
