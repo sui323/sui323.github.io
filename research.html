@@ -17,10 +17,19 @@
     <header class="topbar">
       <div class="site-shell">
         <div class="topbar-inner">
-          <a class="brand" href="./ko.html"><img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" /><span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span></a>
+          <a class="brand" href="./ko.html" aria-label="sui323 홈">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span>
+          </a>
           <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="메뉴 열기" data-nav-toggle><span></span><span></span><span></span></button>
           <div class="nav-wrap" data-nav-wrap>
-            <nav class="nav-links"><a href="./ko.html">홈</a><a href="./research.html" aria-current="page">관심 분야</a><a href="./projects.html">프로젝트</a><a href="./writing.html">글</a><a href="./chat.html">AI Chat</a><a href="./contact.html">연락처</a></nav>
+            <nav class="nav-links" aria-label="주요">
+              <a href="./ko.html">홈</a>
+              <a href="./research.html" aria-current="page">관심 분야</a>
+              <a href="./projects.html">프로젝트</a>
+              <a href="./writing.html">글</a>
+              <a href="./contact.html">연락처</a>
+            </nav>
             <a class="lang-switch" href="./research-en.html">EN</a>
           </div>
         </div>
@@ -29,15 +38,15 @@
     <main class="site-shell">
       <section class="page-hero panel" data-reveal>
         <span class="eyebrow">Focus Areas</span>
-        <h1>지금 집중하는 작업 방향</h1>
-        <p class="page-copy">웹 경험, AI 워크플로, 문서화, 빠른 실험 공개를 중심으로 사이트와 프로젝트 구조를 확장합니다.</p>
+        <h1>지금 사이트를 키우는 중심 주제들</h1>
+        <p class="page-copy">웹 경험, 기록 방식, 실험의 정리, 작은 배포의 리듬을 중심으로 작업 방향을 정리합니다.</p>
       </section>
       <section class="section" data-reveal>
         <div class="grid four">
-          <article class="card"><span class="kicker">Web</span><h3>읽기 쉬운 인터페이스</h3><p>정보량이 많은 페이지도 흐름이 끊기지 않도록 레이아웃과 이동 동선을 함께 설계합니다.</p></article>
-          <article class="card"><span class="kicker">AI</span><h3>실용적인 워크플로</h3><p>반복 작업을 줄이고 생각의 속도를 높일 수 있는 AI 도구 조합을 탐색합니다.</p></article>
-          <article class="card"><span class="kicker">Docs</span><h3>기록이 남는 작업</h3><p>결과뿐 아니라 선택 과정까지 남겨서 다음 버전을 더 쉽게 만드는 데 집중합니다.</p></article>
-          <article class="card"><span class="kicker">Ship</span><h3>작게 만들고 빨리 공개</h3><p>큰 완성보다 작은 배포를 자주 하면서 실제 사용감에 맞춰 정리합니다.</p></article>
+          <article class="card"><span class="kicker">Web</span><h3>읽기 쉬운 인터페이스</h3><p>정보가 많아도 흐름이 끊기지 않게 레이아웃과 이동 동선을 함께 설계합니다.</p></article>
+          <article class="card"><span class="kicker">Archive</span><h3>축적되는 기록</h3><p>한 번 쓰고 끝나는 글보다, 다음 작업으로 이어지는 기록을 남기는 데 집중합니다.</p></article>
+          <article class="card"><span class="kicker">Process</span><h3>과정 중심 정리</h3><p>완성 결과와 함께 판단 과정, 실험 메모, 수정 방향을 같이 보존합니다.</p></article>
+          <article class="card"><span class="kicker">Ship</span><h3>작게 공개하고 다듬기</h3><p>작은 단위로 자주 공개하면서 사이트와 작업물을 함께 성장시킵니다.</p></article>
         </div>
       </section>
       <section class="split-layout section" data-reveal>
@@ -45,23 +54,23 @@
           <span class="kicker">Method</span>
           <h3>작업 방식</h3>
           <ul class="list-clean">
-            <li>먼저 전체 구조를 잡고, 이후 각 페이지를 채웁니다.</li>
-            <li>프로젝트와 글, 챗봇 답변이 서로 연결되도록 맥락을 맞춥니다.</li>
-            <li>정적 사이트의 단순함은 유지하고, 동적 기능은 최소한의 Worker로 보완합니다.</li>
+            <li>먼저 정보 구조를 정한 뒤, 각 페이지의 세부 내용을 채웁니다.</li>
+            <li>소개, 프로젝트, 글이 서로 자연스럽게 이어지도록 맥락을 맞춥니다.</li>
+            <li>복잡한 빌드 없이도 오래 유지할 수 있는 단순한 정적 구조를 선호합니다.</li>
           </ul>
         </article>
         <aside class="notice">
-          <span class="kicker">How to use</span>
-          <h3>방문자 입장에서는</h3>
+          <span class="kicker">Visitor Flow</span>
+          <h3>방문자가 보는 흐름</h3>
           <div class="notice-list">
-            <div><strong>읽기</strong><span>홈과 하위 페이지에서 기본 맥락 파악</span></div>
-            <div><strong>질문하기</strong><span>AI Chat에서 필요한 정보만 바로 확인</span></div>
-            <div><strong>이동하기</strong><span>관심이 생긴 페이지로 자연스럽게 이동</span></div>
+            <div><strong>먼저 보기</strong><span>홈에서 사이트 전체 인상과 방향 파악</span></div>
+            <div><strong>더 깊게 보기</strong><span>관심 분야와 프로젝트, 글로 자연스럽게 이동</span></div>
+            <div><strong>연결하기</strong><span>연락처 페이지에서 공개 채널 확인</span></div>
           </div>
         </aside>
       </section>
     </main>
-    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Focus</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./chat.html">AI Chat</a><a href="./projects.html">프로젝트</a><a href="./contact.html">연락처</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
+    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Focus</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./projects.html">프로젝트</a><a href="./writing.html">글</a><a href="./contact.html">연락처</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
     <script src="./assets/js/site.js" defer></script>
   </body>
 </html>

@@ -1,6 +1,0 @@
-name = "sui323-gemini-proxy"
-main = "worker.js"
-compatibility_date = "2026-04-10"
-
-[vars]
-GEMINI_MODEL = "gemini-3-flash-preview"

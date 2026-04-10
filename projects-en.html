@@ -17,10 +17,19 @@
     <header class="topbar">
       <div class="site-shell">
         <div class="topbar-inner">
-          <a class="brand" href="./en.html"><img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" /><span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span></a>
+          <a class="brand" href="./en.html" aria-label="sui323 home">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span>
+          </a>
           <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="Open menu" data-nav-toggle><span></span><span></span><span></span></button>
           <div class="nav-wrap" data-nav-wrap>
-            <nav class="nav-links"><a href="./en.html">Home</a><a href="./research-en.html">Focus</a><a href="./projects-en.html" aria-current="page">Projects</a><a href="./writing-en.html">Writing</a><a href="./chat-en.html">AI Chat</a><a href="./contact-en.html">Contact</a></nav>
+            <nav class="nav-links" aria-label="Primary">
+              <a href="./en.html">Home</a>
+              <a href="./research-en.html">Focus</a>
+              <a href="./projects-en.html" aria-current="page">Projects</a>
+              <a href="./writing-en.html">Writing</a>
+              <a href="./contact-en.html">Contact</a>
+            </nav>
             <a class="lang-switch" href="./projects.html">KO</a>
           </div>
         </div>
@@ -29,23 +38,23 @@
     <main class="site-shell">
       <section class="page-hero panel" data-reveal>
         <span class="eyebrow">Projects</span>
-        <h1>Projects that grow the site and the archive together</h1>
-        <p class="page-copy">This page is meant for featured work, future experiments, and functional additions like the Gemini chatbot.</p>
+        <h1>Featured work and the experiments that will follow</h1>
+        <p class="page-copy">The site itself is treated as one project, with room for future work, iterations, and build notes to grow around it.</p>
       </section>
       <section class="section" data-reveal>
         <div class="grid three">
-          <article class="card"><span class="kicker">Live</span><h3>sui323.github.io</h3><p>The main site in this repository, connecting introduction, writing, projects, contact, and AI chat.</p></article>
-          <article class="card"><span class="kicker">Feature</span><h3>Gemini AI Chat</h3><p>A conversational layer that lets visitors ask instead of reading every page manually.</p></article>
-          <article class="card"><span class="kicker">Next</span><h3>Project Ledger</h3><p>A future public log for finished work, experiments in progress, and retrospective notes.</p></article>
+          <article class="card"><span class="kicker">Live</span><h3>sui323.github.io</h3><p>The main site connecting introduction, focus areas, projects, writing, and contact in one flow.</p></article>
+          <article class="card"><span class="kicker">Archive</span><h3>Project Ledger</h3><p>A public-facing place for finished work, experiments in progress, and retrospective notes.</p></article>
+          <article class="card"><span class="kicker">Next</span><h3>Micro Experiments</h3><p>Short prototypes and experiments that can become future portfolio material.</p></article>
         </div>
       </section>
       <section class="table-panel" data-reveal>
-        <div class="table-row"><strong>Frontend</strong><span>Static HTML with shared CSS and JS so the site can ship directly on GitHub Pages</span></div>
-        <div class="table-row"><strong>Chat API</strong><span>A Cloudflare Worker proxies Gemini requests and keeps the secret key in environment storage only</span></div>
-        <div class="table-row"><strong>Growth</strong><span>Detailed project pages, external links, and stronger portfolio material can be added incrementally</span></div>
+        <div class="table-row"><strong>Frontend</strong><span>A static multi-page structure sharing one visual system and one small JS layer</span></div>
+        <div class="table-row"><strong>Hosting</strong><span>A simple file-based setup that can be published directly on GitHub Pages</span></div>
+        <div class="table-row"><strong>Growth</strong><span>Easy to expand later with real project links, imagery, and deeper written retrospectives</span></div>
       </section>
     </main>
-    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Projects</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./writing-en.html">Writing</a><a href="./chat-en.html">AI Chat</a><a href="./contact-en.html">Contact</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
+    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Projects</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./writing-en.html">Writing</a><a href="./research-en.html">Focus</a><a href="./contact-en.html">Contact</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
     <script src="./assets/js/site.js" defer></script>
   </body>
 </html>

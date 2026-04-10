@@ -17,10 +17,19 @@
     <header class="topbar">
       <div class="site-shell">
         <div class="topbar-inner">
-          <a class="brand" href="./ko.html"><img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" /><span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span></a>
+          <a class="brand" href="./ko.html" aria-label="sui323 홈">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span>
+          </a>
           <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="메뉴 열기" data-nav-toggle><span></span><span></span><span></span></button>
           <div class="nav-wrap" data-nav-wrap>
-            <nav class="nav-links"><a href="./ko.html">홈</a><a href="./research.html">관심 분야</a><a href="./projects.html" aria-current="page">프로젝트</a><a href="./writing.html">글</a><a href="./chat.html">AI Chat</a><a href="./contact.html">연락처</a></nav>
+            <nav class="nav-links" aria-label="주요">
+              <a href="./ko.html">홈</a>
+              <a href="./research.html">관심 분야</a>
+              <a href="./projects.html" aria-current="page">프로젝트</a>
+              <a href="./writing.html">글</a>
+              <a href="./contact.html">연락처</a>
+            </nav>
             <a class="lang-switch" href="./projects-en.html">EN</a>
           </div>
         </div>
@@ -29,23 +38,23 @@
     <main class="site-shell">
       <section class="page-hero panel" data-reveal>
         <span class="eyebrow">Projects</span>
-        <h1>사이트와 기록을 함께 키우는 프로젝트들</h1>
-        <p class="page-copy">이 페이지는 대표 작업, 실험 후보, 그리고 AI 챗봇처럼 방문자 경험을 바꾸는 기능을 함께 정리하는 용도입니다.</p>
+        <h1>대표 작업과 앞으로 이어질 실험들</h1>
+        <p class="page-copy">사이트 자체를 하나의 프로젝트로 두고, 여기에 앞으로 추가할 작업과 기록을 점차 이어 붙이는 구조입니다.</p>
       </section>
       <section class="section" data-reveal>
         <div class="grid three">
-          <article class="card"><span class="kicker">Live</span><h3>sui323.github.io</h3><p>이 저장소 자체의 메인 사이트입니다. 소개, 글, 프로젝트, 연락처, AI Chat을 한 구조로 묶습니다.</p></article>
-          <article class="card"><span class="kicker">Feature</span><h3>Gemini AI Chat</h3><p>사이트 내용을 읽는 대신 질문으로 바로 접근할 수 있도록 만든 대화형 안내 기능입니다.</p></article>
-          <article class="card"><span class="kicker">Next</span><h3>Project Ledger</h3><p>완성한 작업과 진행 중인 실험, 회고 메모를 함께 보관하는 프로젝트 로그를 확장할 수 있습니다.</p></article>
+          <article class="card"><span class="kicker">Live</span><h3>sui323.github.io</h3><p>소개, 관심 분야, 프로젝트, 글, 연락처를 하나의 흐름으로 묶은 메인 사이트입니다.</p></article>
+          <article class="card"><span class="kicker">Archive</span><h3>Project Ledger</h3><p>완성된 작업과 진행 중인 실험, 회고를 함께 정리하는 공개형 프로젝트 로그 자리입니다.</p></article>
+          <article class="card"><span class="kicker">Next</span><h3>Micro Experiments</h3><p>짧은 기간에 만들 수 있는 실험과 프로토타입을 모아 다음 포트폴리오 재료로 확장합니다.</p></article>
         </div>
       </section>
       <section class="table-panel" data-reveal>
-        <div class="table-row"><strong>Frontend</strong><span>정적 HTML, 공통 CSS, 공통 JS로 GitHub Pages에 바로 배포 가능하게 구성</span></div>
-        <div class="table-row"><strong>Chat API</strong><span>Cloudflare Worker에서 Gemini API를 프록시하고 비밀키는 환경 변수로만 관리</span></div>
-        <div class="table-row"><strong>Growth</strong><span>프로젝트 상세 페이지, 외부 링크, 실제 포트폴리오 자료를 계속 이어 붙일 수 있는 구조</span></div>
+        <div class="table-row"><strong>Frontend</strong><span>공통 CSS와 JS를 공유하는 정적 다중 페이지 구조</span></div>
+        <div class="table-row"><strong>Hosting</strong><span>GitHub Pages에 바로 올릴 수 있는 단순한 파일 기반 구성</span></div>
+        <div class="table-row"><strong>Growth</strong><span>실제 프로젝트 링크, 이미지, 회고 글을 나중에 계속 이어 붙일 수 있는 골격</span></div>
       </section>
     </main>
-    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Projects</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./writing.html">글</a><a href="./chat.html">AI Chat</a><a href="./contact.html">연락처</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
+    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Projects</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./writing.html">글</a><a href="./research.html">관심 분야</a><a href="./contact.html">연락처</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
     <script src="./assets/js/site.js" defer></script>
   </body>
 </html>

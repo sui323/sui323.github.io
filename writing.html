@@ -17,10 +17,19 @@
     <header class="topbar">
       <div class="site-shell">
         <div class="topbar-inner">
-          <a class="brand" href="./ko.html"><img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" /><span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span></a>
+          <a class="brand" href="./ko.html" aria-label="sui323 홈">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span>
+          </a>
           <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="메뉴 열기" data-nav-toggle><span></span><span></span><span></span></button>
           <div class="nav-wrap" data-nav-wrap>
-            <nav class="nav-links"><a href="./ko.html">홈</a><a href="./research.html">관심 분야</a><a href="./projects.html">프로젝트</a><a href="./writing.html" aria-current="page">글</a><a href="./chat.html">AI Chat</a><a href="./contact.html">연락처</a></nav>
+            <nav class="nav-links" aria-label="주요">
+              <a href="./ko.html">홈</a>
+              <a href="./research.html">관심 분야</a>
+              <a href="./projects.html">프로젝트</a>
+              <a href="./writing.html" aria-current="page">글</a>
+              <a href="./contact.html">연락처</a>
+            </nav>
             <a class="lang-switch" href="./writing-en.html">EN</a>
           </div>
         </div>
@@ -29,23 +38,23 @@
     <main class="site-shell">
       <section class="page-hero panel" data-reveal>
         <span class="eyebrow">Writing</span>
-        <h1>제작기, 회고, 공개 메모를 모아 둘 자리</h1>
-        <p class="page-copy">짧은 작업 기록부터 긴 회고까지, 프로젝트와 챗봇이 참고할 수 있는 공개 텍스트를 쌓아 가는 공간입니다.</p>
+        <h1>제작기, 회고, 메모를 남겨 두는 공간</h1>
+        <p class="page-copy">짧은 작업 기록부터 긴 회고까지, 결과물 뒤에 남는 생각과 선택의 흐름을 계속 정리해 둘 수 있습니다.</p>
       </section>
       <section class="section" data-reveal>
         <div class="grid three">
-          <article class="card"><span class="kicker">Build Notes</span><h3>만드는 과정 기록</h3><p>무엇을 만들었는지보다 왜 그렇게 만들었는지를 같이 남기는 글.</p></article>
-          <article class="card"><span class="kicker">Retrospective</span><h3>끝난 뒤 정리</h3><p>좋았던 판단, 아쉬운 선택, 다음 버전의 방향을 정리하는 회고.</p></article>
-          <article class="card"><span class="kicker">Guide</span><h3>다음 사람을 위한 메모</h3><p>셋업 방법, 도구 조합, 시행착오를 짧은 가이드 형태로 남기는 문서.</p></article>
+          <article class="card"><span class="kicker">Build Notes</span><h3>만드는 과정 기록</h3><p>무엇을 만들었는지와 왜 그렇게 만들었는지를 함께 적어 두는 글입니다.</p></article>
+          <article class="card"><span class="kicker">Retrospective</span><h3>완료 후 정리</h3><p>좋았던 판단과 아쉬운 선택, 다음 버전에서 고치고 싶은 점을 정리합니다.</p></article>
+          <article class="card"><span class="kicker">Guide</span><h3>다음 작업을 위한 메모</h3><p>설정 방법, 도구 조합, 시행착오를 나중에 다시 쓰기 쉽게 남겨 둡니다.</p></article>
         </div>
       </section>
       <section class="notice" data-reveal>
-        <span class="kicker">추천 연결</span>
-        <h3>글은 AI Chat 품질도 함께 올립니다</h3>
-        <p class="muted">챗봇이 답할 근거가 늘어날수록 사이트는 더 풍부해집니다. 공개 가능한 기록을 계속 추가할수록 AI 답변의 맥락도 자연스럽게 좋아집니다.</p>
+        <span class="kicker">Archive Value</span>
+        <h3>기록은 다음 프로젝트의 재료가 됩니다</h3>
+        <p class="muted">한 번의 글로 끝나는 것이 아니라, 이후 프로젝트 소개와 포트폴리오 서술에 다시 활용될 수 있는 텍스트를 쌓아 가는 구조입니다.</p>
       </section>
     </main>
-    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Writing</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./projects.html">프로젝트</a><a href="./chat.html">AI Chat</a><a href="./contact.html">연락처</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
+    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Writing</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./projects.html">프로젝트</a><a href="./research.html">관심 분야</a><a href="./contact.html">연락처</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
     <script src="./assets/js/site.js" defer></script>
   </body>
 </html>

@@ -17,10 +17,19 @@
     <header class="topbar">
       <div class="site-shell">
         <div class="topbar-inner">
-          <a class="brand" href="./en.html"><img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" /><span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span></a>
+          <a class="brand" href="./en.html" aria-label="sui323 home">
+            <img class="brand-mark" src="./assets/img/brand-mark.svg" alt="" />
+            <span class="brand-copy"><small>Personal Site</small><strong>sui323</strong></span>
+          </a>
           <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="Open menu" data-nav-toggle><span></span><span></span><span></span></button>
           <div class="nav-wrap" data-nav-wrap>
-            <nav class="nav-links"><a href="./en.html">Home</a><a href="./research-en.html" aria-current="page">Focus</a><a href="./projects-en.html">Projects</a><a href="./writing-en.html">Writing</a><a href="./chat-en.html">AI Chat</a><a href="./contact-en.html">Contact</a></nav>
+            <nav class="nav-links" aria-label="Primary">
+              <a href="./en.html">Home</a>
+              <a href="./research-en.html" aria-current="page">Focus</a>
+              <a href="./projects-en.html">Projects</a>
+              <a href="./writing-en.html">Writing</a>
+              <a href="./contact-en.html">Contact</a>
+            </nav>
             <a class="lang-switch" href="./research.html">KO</a>
           </div>
         </div>
@@ -29,39 +38,39 @@
     <main class="site-shell">
       <section class="page-hero panel" data-reveal>
         <span class="eyebrow">Focus Areas</span>
-        <h1>Current directions worth building around</h1>
-        <p class="page-copy">The site grows around web experience, AI workflow, documentation, and small experiments that can ship quickly.</p>
+        <h1>The themes currently shaping the site</h1>
+        <p class="page-copy">The direction of the site centers on web experience, durable notes, process clarity, and a steady rhythm of small releases.</p>
       </section>
       <section class="section" data-reveal>
         <div class="grid four">
-          <article class="card"><span class="kicker">Web</span><h3>Readable interfaces</h3><p>Layout, type, and navigation are shaped together so dense information still feels clear.</p></article>
-          <article class="card"><span class="kicker">AI</span><h3>Practical workflow design</h3><p>Exploring tool combinations that reduce repetition and speed up experimentation.</p></article>
-          <article class="card"><span class="kicker">Docs</span><h3>Work that leaves a trace</h3><p>Notes and reasoning are kept close to the result so the next version is easier to shape.</p></article>
-          <article class="card"><span class="kicker">Ship</span><h3>Smaller releases, more often</h3><p>The goal is steady publication, not a single oversized launch.</p></article>
+          <article class="card"><span class="kicker">Web</span><h3>Readable interfaces</h3><p>Layouts and navigation are designed together so information stays calm and easy to follow.</p></article>
+          <article class="card"><span class="kicker">Archive</span><h3>Notes that accumulate</h3><p>The goal is writing that remains useful for future versions instead of disappearing after one release.</p></article>
+          <article class="card"><span class="kicker">Process</span><h3>Documented decisions</h3><p>Results matter, but the reasoning, experiments, and revisions matter just as much.</p></article>
+          <article class="card"><span class="kicker">Ship</span><h3>Small releases, steady refinement</h3><p>Publishing smaller versions more often helps both the site and the work mature in public.</p></article>
         </div>
       </section>
       <section class="split-layout section" data-reveal>
         <article class="section-block panel">
           <span class="kicker">Method</span>
-          <h3>How the work is framed</h3>
+          <h3>How the work is structured</h3>
           <ul class="list-clean">
-            <li>Set the information structure before filling the details.</li>
-            <li>Keep projects, writing, and chatbot answers aligned around the same public context.</li>
-            <li>Preserve a simple static stack and add only a minimal Worker where dynamic behavior is needed.</li>
+            <li>Start by defining the information architecture before filling the details.</li>
+            <li>Keep the introduction, projects, and writing aligned around one coherent public narrative.</li>
+            <li>Prefer a simple static structure that remains easy to maintain over time.</li>
           </ul>
         </article>
         <aside class="notice">
-          <span class="kicker">For visitors</span>
-          <h3>How this helps</h3>
+          <span class="kicker">Visitor Flow</span>
+          <h3>How people move through the site</h3>
           <div class="notice-list">
-            <div><strong>Read</strong><span>Understand the site at a glance</span></div>
-            <div><strong>Ask</strong><span>Use AI Chat when you need a direct answer</span></div>
-            <div><strong>Navigate</strong><span>Move from summary to detail without losing context</span></div>
+            <div><strong>First</strong><span>Get the overall direction from the homepage</span></div>
+            <div><strong>Then</strong><span>Move naturally into focus, projects, and writing</span></div>
+            <div><strong>Finally</strong><span>Use the contact page for public connection points</span></div>
           </div>
         </aside>
       </section>
     </main>
-    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Focus</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./chat-en.html">AI Chat</a><a href="./projects-en.html">Projects</a><a href="./contact-en.html">Contact</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
+    <footer class="footer"><div class="site-shell"><div class="footer-inner"><div class="footer-brand"><small>Focus</small><strong>sui323.github.io</strong></div><nav class="footer-nav"><a href="./projects-en.html">Projects</a><a href="./writing-en.html">Writing</a><a href="./contact-en.html">Contact</a></nav><span class="lang-note">© <span data-year></span> sui323</span></div></div></footer>
     <script src="./assets/js/site.js" defer></script>
   </body>
 </html>
